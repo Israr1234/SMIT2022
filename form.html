@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<style>
+   *{
+       box-sizing: border-box;
+   }
+   body{
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+       margin: 15px 30px;
+       padding: 8px;
+   }
+   .container{
+       background-color: #f2f2f2;
+       padding: 5px 20px 15px 20px;
+       border: 1px solid lightgray;
+       border-radius: 4px;
+   }
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+
+select,textarea{
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+textarea{
+    background-color: #fff;
+    border: 1px solid #ccc ;
+}
+input[type="submit"]{
+    background-color: darkcyan;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="submit"]:hover{
+    background-color: lightblue;
+}
+input[type="reset"]{
+    background-color: rgb(255, 28, 28);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+input[type="reset"]:hover{
+    background-color: darkred;
+}
+</style>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 align="center">Student Registration Form</h1>
+        <p>First Name: <input type="text" name="first Name" placeholder="First name" maxlength="50"></p>
+        <p>Last Name: <input type="text" name="Last Name" placeholder="Last name" maxlength="50"></p>
+        <p>Email ID: <input type="email" name="Email" id="email" placeholder="Email"></p>
+        <p>Gender: <input type="radio" name="Gender" id="Male" value="male">Male <input type="radio" name="Gender" id="Female" value="Female">Female</p>
+        <p>Date of birth: <input type="date" name="Date" value="Date"></p>
+       <p>Address: <textarea name="address" id="address" cols="30" rows="10"></textarea></p>
+       <p>City:<select name="City" id="city">
+           <option value="">--Which City do you live--</option>
+           <option value="Karachi">Karachi</option>
+           <option value="Lahore">Lahore</option>
+           <option value="Islamabad">Islamabad</option>
+           <option value="Quetta">Quetta</option>
+           <option value="Peshawar">Peshawar</option>
+           <option value="Multan">Multan</option>
+       </select></p>
+       <p>Pin Code: <input type="number" name="Pin Code"></p>
+       <p>State: <input type="text" name="State" placeholder="state" maxlength="50"></p>
+       
+       <p>Hobbies: <input type="checkbox" name="Hobbies" id="hobbies" value="Drawing">Drawing <input type="checkbox"  name="Hobbies" id="hobbies" value="singing">Singing <input type="checkbox"  name="Hobbies" id="hobbies" value="Dancing">Dancing <input type="checkbox"  name="Hobbies" id="hobbies" value="other">Other<input type="text"  name="Hobbies" id="hobbies" placeholder="Ex-Teaching" maxlength="50"></p>
+       <table id="T1">
+          <tr>
+              <th>Qualification:</th>
+              <th><input type="checkbox" name="High School(10th)" value="High School(10th)" >High School(10th)</th>
+          </tr>
+          <tr>
+              <th></th>
+              <th><input type="checkbox" name="Higher School(12th)" value="Higher School(12th)">Higher School(12th)</th>
+          </tr>
+          <tr>
+              <th></th>
+              <th><input type="checkbox" name="Graduation(bachelor)" value="Graduation(bachelor)">Graudation(bachelor)</th>
+          </tr>
+          <tr>
+              <th></th>
+              <th><input type="checkbox" name="Post Graduation(Master)" value="Post Graduation(Master)">Post Graduation(Master)</th>
+          </tr>
+      </table>
+      <br/>
+      <br/>
+      <table>
+          <tr>
+              <th>Courses Applied for:</th>
+              <th><input type="checkbox" name="BCA(bachelor of computer science)" value="BCA(bachelor of computer science)">BCA(bachelor of computer science)</th>
+          </tr>
+          <tr>
+              <th></th>
+              <th><input type="checkbox" name="B.Com(Bachelor of commerce)" value="B.Com(Bachelor of commerce)">B.Com(Bachelor of commerce)</th>
+          </tr>
+          <tr>
+              <th></th>
+              <th><input type="checkbox" name="B.Sc(Bachelor of Science)" value="B.Sc(Bachelor of Science)">B.Sc(Bachelor of Science)</th>
+          </tr>
+      </table>
+      <input type="Submit" name="submit" value="Submit"> <br><br>
+      <input type="reset" name="reset" id="reset">
+    </form>
+    </div>
+</body>
+</html>
